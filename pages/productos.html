@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tech | Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/Productos.css">
+    <!-- Model Viewer para visualización 3D -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">TechZone<span class="text-primary">ZONE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header específico para productos -->
+    <header class="product-header" id="particles-js">
+        <div class="container position-relative" style="z-index: 2;">
+            <h1 class="product-title">Experiencia Tecnológica <span class="d-block">en 3D</span></h1>
+            <p class="product-subtitle">
+                Explora nuestros productos con modelos 3D interactivos - gira, acerca y descubre cada detalle
+            </p>
+            
+            <!-- Barra de filtros mejorada -->
+            <div class="filter-bar mt-5">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <button class="category-button active" data-category="todos">
+                        <i class="bi bi-grid-3x3-gap me-2"></i>Todos
+                    </button>
+                    <button class="category-button" data-category="audio">
+                        <i class="bi bi-headphones me-2"></i>Audio
+                    </button>
+                    <button class="category-button" data-category="cargadores">
+                        <i class="bi bi-battery-charging me-2"></i>Cargadores
+                    </button>
+                    <button class="category-button" data-category="wearables">
+                        <i class="bi bi-smartwatch me-2"></i>Wearables
+                    </button>
+                    <button class="category-button" data-category="accesorios">
+                        <i class="bi bi-mouse me-2"></i>Accesorios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row product-grid">
+            <!-- Tarjeta de auriculares -->
+            <div class="col-md-4 col-lg-4 py-2" data-category="audio">
+                <div class="glass-card">
+                    <span class="card-badge">Popular</span>
+                    <div class="model-viewer-container">
+                        <img src="../img/auriculares.png" class="card-img-top img_index" alt="Auriculares" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="product-rating">★★★★★ <span class="ms-2 text-white-50">(124)</span></div>
+                        <h5 class="card-title">Auriculares Pro X3</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-auto">
+                                <p class="card-text mb-0"><span class="price-original">$150.000</span> $120.000 COP</p>
+                                <span class="badge bg-success">25% OFF</span>
+                            </div>
+                            <div class="product-stock text-success">
+                                <i class="bi bi-check-circle-fill"></i> En stock
+                            </div>
+                        </div>
+                        <div class="product-features small text-white-50 mb-3">
+                            <span><i class="bi bi-bluetooth me-1"></i>Bluetooth 5.2</span> •
+                            <span><i class="bi bi-battery-full me-1"></i>30h</span> •
+                            <span><i class="bi bi-water me-1"></i>IP67</span>
+                        </div>
+                        <div class="d-flex">
+                            <a href="auricular.html" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-cart-plus me-1"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de cargador -->
+            <div class="col-md-4 col-lg-4 py-2" data-category="cargadores">
+                <div class="glass-card">
+                    <div class="model-viewer-container">
+                        <img src="../img/cargador.png" class="card-img-top img_index" alt="Cargador" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="product-rating">★★★★☆ <span class="ms-2 text-white-50">(87)</span></div>
+                        <h5 class="card-title">Cargador Rápido 65W</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-auto">
+                                <p class="card-text mb-0">$75.000 COP</p>
+                            </div>
+                            <div class="product-stock text-success">
+                                <i class="bi bi-check-circle-fill"></i> En stock
+                            </div>
+                        </div>
+                        <div class="product-features small text-white-50 mb-3">
+                            <span><i class="bi bi-lightning-charge me-1"></i>65W GaN</span> •
+                            <span><i class="bi bi-usb-c me-1"></i>3 Puertos</span> •
+                            <span><i class="bi bi-shield-check me-1"></i>Protección</span>
+                        </div>
+                        <div class="d-flex">
+                            <a href="cargador.html" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-cart-plus me-1"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de smartwatch -->
+            <div class="col-md-4 col-lg-4 py-2" data-category="wearables">
+                <div class="glass-card">
+                    <span class="card-badge">Nuevo</span>
+                    <div class="model-viewer-container">
+                        <img src="../img/smartwatch.png" class="card-img-top img_index" alt="Smartwatch" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="product-rating">★★★★★ <span class="ms-2 text-white-50">(215)</span></div>
+                        <h5 class="card-title">Smartwatch Deportivo Pro</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-auto">
+                                <p class="card-text mb-0">$250.000 COP</p>
+                            </div>
+                            <div class="product-stock text-success">
+                                <i class="bi bi-check-circle-fill"></i> En stock
+                            </div>
+                        </div>
+                        <div class="product-features small text-white-50 mb-3">
+                            <span><i class="bi bi-heart-pulse me-1"></i>Ritmo cardíaco</span> •
+                            <span><i class="bi bi-droplet me-1"></i>Resistente</span> •
+                            <span><i class="bi bi-battery-full me-1"></i>7 días</span>
+                        </div>
+                        <div class="d-flex">
+                            <a href="smartwatch.html" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-cart-plus me-1"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de trípode -->
+            <div class="col-md-4 col-lg-4 py-2" data-category="accesorios">
+                <div class="glass-card">
+                    <div class="model-viewer-container">
+                        <img src="../img/Tripode.png" class="card-img-top img_index" alt="Tripode" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="product-rating">★★★☆☆ <span class="ms-2 text-white-50">(42)</span></div>
+                        <h5 class="card-title">Trípode Abatible Pro</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-auto">
+                                <p class="card-text mb-0">$30.000 COP</p>
+                            </div>
+                            <div class="product-stock text-warning">
+                                <i class="bi bi-exclamation-circle-fill"></i> Últimas unidades
+                            </div>
+                        </div>
+                        <div class="product-features small text-white-50 mb-3">
+                            <span><i class="bi bi-arrows-angle-expand me-1"></i>Ajustable</span> •
+                            <span><i class="bi bi-phone me-1"></i>Universal</span> •
+                            <span><i class="bi bi-lightbulb me-1"></i>Anillo luz</span>
+                        </div>
+                        <div class="d-flex">
+                            <a href="tripode.html" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-cart-plus me-1"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de cooler -->
+            <div class="col-md-4 col-lg-4 py-2" data-category="accesorios">
+                <div class="glass-card">
+                    <span class="card-badge">Oferta</span>
+                    <div class="model-viewer-container">
+                        <img src="../img/baseLaptop.png" class="card-img-top img_index" alt="CoolerPad" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="product-rating">★★★★☆ <span class="ms-2 text-white-50">(78)</span></div>
+                        <h5 class="card-title">Laptop Cooling Pad Pro</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-auto">
+                                <p class="card-text mb-0"><span class="price-original">$210.000</span> $190.000 COP</p>
+                                <span class="badge bg-success">10% OFF</span>
+                            </div>
+                            <div class="product-stock text-success">
+                                <i class="bi bi-check-circle-fill"></i> En stock
+                            </div>
+                        </div>
+                        <div class="product-features small text-white-50 mb-3">
+                            <span><i class="bi bi-fan me-1"></i>6 Ventiladores</span> •
+                            <span><i class="bi bi-usb-plug me-1"></i>USB</span> •
+                            <span><i class="bi bi-brightness-high me-1"></i>RGB</span>
+                        </div>
+                        <div class="d-flex">
+                            <a href="cooler.html" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-cart-plus me-1"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de adaptador -->
+            <div class="col-md-4 col-lg-4 py-2" data-category="accesorios">
+                <div class="glass-card">
+                    <div class="model-viewer-container">
+                        <img src="../img/ADAP-C.png" class="card-img-top img_index" alt="AdaptadorUSBC" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="product-rating">★★★★☆ <span class="ms-2 text-white-50">(63)</span></div>
+                        <h5 class="card-title">Adaptador USB-C x8</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-auto">
+                                <p class="card-text mb-0">$120.000 COP</p>
+                            </div>
+                            <div class="product-stock text-success">
+                                <i class="bi bi-check-circle-fill"></i> En stock
+                            </div>
+                        </div>
+                        <div class="product-features small text-white-50 mb-3">
+                            <span><i class="bi bi-hdmi me-1"></i>HDMI 4K</span> •
+                            <span><i class="bi bi-usb-drive me-1"></i>3 USB</span> •
+                            <span><i class="bi bi-sd-card me-1"></i>Lector SD</span>
+                        </div>
+                        <div class="d-flex">
+                            <a href="adaptador.html" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-cart-plus me-1"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Paginación -->
+        <nav aria-label="Page navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Sección de suscripción mejorada -->
+    <section class="subscribe text-center py-5">
+        <div class="container">
+            <h2 class="text-white mb-3">¡Suscríbete y recibe ofertas exclusivas!</h2>
+            <p class="text-white mb-4">Recibe un 10% de descuento en tu primera compra y acceso anticipado a nuevos productos</p>
+            <form class="mt-3 max-w-md mx-auto">
+                <div class="input-group">
+                    <input type="email" class="form-control neon-input" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-warning">
+                        <i class="bi bi-envelope-check me-1"></i> Suscribirse
+                    </button>
+                </div>
+                <div class="form-check mt-3 text-start text-white-50">
+                    <input class="form-check-input" type="checkbox" id="newsletterCheck" checked>
+                    <label class="form-check-label small" for="newsletterCheck">
+                        Acepto recibir comunicaciones y ofertas especiales
+                    </label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer mejorado -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-md-4 mb-4">
+                    <h5>TechZone</h5>
+                    <p class="text-white-50">Tecnología del futuro, hoy. Experimenta productos como nunca antes con nuestros modelos 3D interactivos.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Explorar</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="../index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="productos.html">Productos</a></li>
+                        <li class="mb-2"><a href="ofertas.html">Ofertas</a></li>
+                        <li class="mb-2"><a href="novedades.html">Novedades</a></li>
+                        <li class="mb-2"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="faq.html">Preguntas frecuentes</a></li>
+                        <li class="mb-2"><a href="envios.html">Envíos y devoluciones</a></li>
+                        <li class="mb-2"><a href="garantias.html">Garantías</a></li>
+                        <li class="mb-2"><a href="terminos.html">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Calle 123 #45-67, Bogotá</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +57 601 123 4567</li>
+                        <li class="mb-2"><i class="bi bi-whatsapp me-2"></i> +57 300 987 6543</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@techzone.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2025 TechZone. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="payment-methods">
+                        <img src="https://via.placeholder.com/40x25/fff/fff?text=VS" alt="Visa" class="me-2" loading="lazy">
+                        <img src="https://via.placeholder.com/40x25/fff/fff?text=MC" alt="Mastercard" class="me-2" loading="lazy">
+                        <img src="https://via.placeholder.com/40x25/fff/fff?text=PP" alt="PayPal" class="me-2" loading="lazy">
+                        <img src="https://via.placeholder.com/40x25/fff/fff?text=PSE" alt="PSE" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons completo -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Efecto de navbar al hacer scroll
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            });
+            
+            // Funcionalidad para los filtros de categorías
+            const categoryButtons = document.querySelectorAll('.category-button');
+            const productCards = document.querySelectorAll('[data-category]');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase activa de todos los botones
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    // Añadir clase activa al botón clickeado
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Animación de filtrado
+                    productCards.forEach(card => {
+                        if (category === 'todos' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Efectos hover para las tarjetas
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 15px 30px rgba(32, 160, 255, 0.3)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+                });
+            });
+
+            // Animación inicial de las tarjetas
+            const productCardsInitial = document.querySelectorAll('.product-grid .col-md-4');
+            productCardsInitial.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 + (index * 100));
+            });
+        });
+    </script>
+</body>
+</html>

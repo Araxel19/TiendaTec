@@ -1,0 +1,52 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #003092;
+    --secondary-color: #00879E;
+    --accent-color: #FFAB5B;
+    --light-bg: #FFF2DB;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero {
+    background: var(--secondary-color);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Productos */
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Beneficios */
+.benefits {
+    background-color: var(--light-bg);
+}
+
+/* Suscripción */
+.subscribe {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.img_index{
+    height: 400px;
+}
